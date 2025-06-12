@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Blog Personal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+          <h1 class="logo">Mi Blog Tech</h1>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#articulos">Artículos</a></li>
+              <li><a href="#crear">Crear Post</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="hero-carousel" id="inicio">
+        <div class="carousel-container">
+          
+          <!-- Diapositiva 1 -->
+          <div class="carousel-slide active">
+            <img src="images/article2.webp" alt="Desarrollo Web Moderno">
+            <div class="slide-content">
+              <h2>Desarrollo Web Moderno</h2>
+              <p>Aprende las últimas tecnologías frontend</p>
+            </div>
+          </div>
+      
+          <!-- Diapositiva 2 -->
+          <div class="carousel-slide">
+            <img src="images/article1.avif" alt="CSS Avanzado">
+            <div class="slide-content">
+              <h2>CSS Avanzado</h2>
+              <p>Domina layouts y animaciones</p>
+            </div>
+          </div>
+      
+          <!-- Diapositiva 3 -->
+          <div class="carousel-slide">
+            <img src="images/hero1.avif" alt="Responsive Design">
+            <div class="slide-content">
+              <h2>Responsive Design</h2>
+              <p>Crea sitios que se adapten a cualquier dispositivo</p>
+            </div>
+          </div>
+      
+          <!-- Controles (a futuro con JS) -->
+          <div class="carousel-controls">
+            <button class="control-btn prev">‹</button>
+            <button class="control-btn next">›</button>
+          </div>
+      
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+      
+        </div>
+      </section>
+      
+</body>
+<section class="create-post" id="crear">
+    <div class="container">
+      <h2 class="section-title">Crear Nuevo Artículo</h2>
+      <form class="post-form">
+        
+        <div class="form-group">
+          <label for="title">Título del Artículo</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="category">Categoría</label>
+          <select id="category" name="category">
+            <option value="">Selecciona una categoría</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="design">Diseño</option>
+            <option value="tools">Herramientas</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="excerpt">Resumen</label>
+          <textarea id="excerpt" name="excerpt" rows="3" placeholder="Breve descripción..."></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="content">Contenido</label>
+          <textarea id="content" name="content" rows="8" placeholder="Escribe el contenido del artículo aquí..."></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="image">URL de Imagen</label>
+          <input type="url" id="image" name="image" placeholder="https://ejemplo.com/imagen.jpg">
+        </div>
+  
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Publicar Artículo</button>
+          <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="blog-articles" id="articulos">
+    <div class="container">
+      <h2 class="section-title">Últimos Artículos</h2>
+  
+      <div class="articles-grid">
+        
+        <article class="article-card">
+          <div class="article-image">
+            <img src="images/hero2.png" alt="CSS Grid Layout">
+          </div>
+          <div class="article-content">
+            <span class="article-category">Frontend</span>
+            <h3 class="article-title">Dominando CSS Grid Layout</h3>
+            <p class="article-excerpt">CSS Grid es una herramienta poderosa para crear layouts. Aprende cómo usarla en tus proyectos.</p>
+            <div class="article-meta">
+              <span class="author">Por: Juan Developer</span>
+              <span class="date">15 de Marzo, 2024</span>
+            </div>
+            <a href="#" class="read-more">Leer más →</a>
+          </div>
+        </article>
+  
+        <!-- Artículo 2 -->
+        <article class="article-card">
+          <div class="article-image">
+            <img src="images/hero3.avif" alt="Responsive Design">
+          </div>
+          <div class="article-content">
+            <span class="article-category">Diseño</span>
+            <h3 class="article-title">Principios del Responsive Design</h3>
+            <p class="article-excerpt">Descubre las mejores prácticas para crear sitios que se adapten a cualquier dispositivo.</p>
+            <div class="article-meta">
+              <span class="author">Por: María Frontend</span>
+              <span class="date">12 de Marzo, 2024</span>
+            </div>
+            <a href="#" class="read-more">Leer más →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer" id="contacto">
+    <div class="container">
+      <div class="footer-content">
+  
+        <div class="footer-section">
+          <h4>Mi Blog Tech</h4>
+          <p>Compartiendo conocimiento sobre desarrollo web y tecnología.</p>
+        </div>
+  
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#crear">Crear Post</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p>Email: contacto@miblogtech.com</p>
+          <p>Síguenos en redes sociales</p>
+        </div>
+  
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2024 Mi Blog Tech. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+      
+</html>
